@@ -1,0 +1,274 @@
+
+<!--pages/huangli/huangli.wxml-->
+<import src="template/template.wxml" />
+<view class="container">
+  <view class="calendar-main">
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <view class="picker">
+        <view class="calendar-title">
+          <text class="font-medium">2017年1月</text>
+          <image class="arrow" src="/image/arrow-bottom.png"></image>
+        </view>
+      </view>
+    </picker>
+    <view class="calendar-dayView">
+      <text class="calendar-day">22</text>
+      <text class="calendar-nongli">农历腊月廿五</text>
+      <text class="calendar-week">星期日</text>
+    </view>
+    <view>
+      <text class="font-medium">四九</text>
+      <text class="font-medium">第6天</text>
+    </view>
+  </view>
+  <view class="calendar-detail">
+    <view class="calendar-table">
+      <view class="row">
+        <view class="cell">
+          <view class="cell-left1">
+            <text class="font-small color-green">黑道</text>
+            <text class="font-small">勾陈</text>
+          </view>
+          <view class="cell-left2">
+            <view class="circle-bgc">
+              <text class="font-circle">宜</text>
+            </view>
+            <view class="yi">
+              <text>入宅</text>
+              <text>结婚</text>
+              <text>收养</text>
+              <text>搬家</text>
+              <text>沐浴</text>
+              <text>理发</text>
+              <text>筑堤</text>
+            </view>
+          </view>
+        </view>
+        <view class="cell">
+          <view class="cell-middle1">
+            <image class="cell-img" src="/image/luopan.png"></image>
+          </view>
+          <view class="cell-middle2">
+            <template is="compassDetail-tpl" />
+          </view>
+        </view>
+        <view class="cell">
+          <view class="cell-left1">
+            <text class="font-small color-green">鸡日冲兔</text>
+            <text class="font-small">煞东54岁</text>
+          </view>
+          <view class="cell-left2">
+            <view class="circle-bgc">
+              <text class="font-circle">忌</text>
+            </view>
+            <view class="yi">
+              <text>破土</text>
+              <text>安葬</text>
+              <text>启攒</text>
+              <text>探亲</text>
+              <text>访友</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="calendar-table">
+      <view class="row">
+        <view class="cell cell-1">
+          <text class="font-small color-green">今日五行</text>
+          <view class="table">
+            <view class="tr">
+              <view class="td">
+                <text>天干</text>
+              </view>
+              <view class="td">
+                <text class="color-green">辛金</text>
+              </view>
+            </view>
+            <view class="tr">
+              <view class="td">
+                <text>地支</text>
+              </view>
+              <view class="td">
+                <text class="color-green">酉金</text>
+              </view>
+            </view>
+            <view class="tr">
+              <view class="td">
+                <text>纳音</text>
+              </view>
+              <view class="td">
+                <text class="color-green">石榴</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="cell cell-2">
+          <text class="font-small color-green">时辰凶吉</text>
+          <view class="table">
+            <view class="tr">
+              <view class="td">
+                <text>子</text>
+              </view>
+              <view class="td">
+                <text>丑</text>
+              </view>
+              <view class="td">
+                <text>寅</text>
+              </view>
+              <view class="td">
+                <text>卯</text>
+              </view>
+              <view class="td">
+                <text>辰</text>
+              </view>
+              <view class="td">
+                <text>巳</text>
+              </view>
+              <view class="td">
+                <text>午</text>
+              </view>
+              <view class="td">
+                <text>未</text>
+              </view>
+              <view class="td">
+                <text class="color-green">申</text>
+              </view>
+              <view class="td">
+                <text>酉</text>
+              </view>
+              <view class="td">
+                <text>戌</text>
+              </view>
+              <view class="td">
+                <text>亥</text>
+              </view>
+            </view>
+            <view class="tr">
+              <view class="td">
+                <text>吉</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+              <view class="td">
+                <text>吉</text>
+              </view>
+              <view class="td">
+                <text>吉</text>
+              </view>
+              <view class="td">
+                <text class="color-green">凶</text>
+              </view>
+              <view class="td">
+                <text>吉</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+              <view class="td">
+                <text>凶</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="cell cell-1">
+          <text class="font-small color-green">今日八字</text>
+          <view class="table">
+            <view class="tr">
+              <view class="td">
+                <text>丙</text>
+              </view>
+              <view class="td">
+                <text>辛</text>
+              </view>
+              <view class="td">
+                <text>辛</text>
+              </view>
+              <view class="td">
+                <text>戊</text>
+              </view>
+            </view>
+            <view class="tr">
+              <view class="td">
+                <text>申</text>
+              </view>
+              <view class="td">
+                <text>丑</text>
+              </view>
+              <view class="td">
+                <text>酉</text>
+              </view>
+              <view class="td">
+                <text>子</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="calendar-table table-3">
+      <view class="row">
+        <view class="cell cell-4">
+          <view>
+            <text class="font-small color-green">廿八宿</text>
+          </view>
+          <view>
+            <text>娄金苟</text>
+          </view>
+        </view>
+        <view class="cell cell-3">
+          <view>
+            <text class="font-small color-green">彭祖百忌</text>
+          </view>
+          <view class="table">
+            <view class="tr">
+              <view class="td">
+                <text>辛不合酱</text>
+              </view>
+              <view class="td">
+                <text>主人不尝</text>
+              </view>
+            </view>
+            <view class="tr">
+              <view class="td">
+                <text>酉不会客</text>
+              </view>
+              <view class="td">
+                <text>醉做颠状</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="cell cell-4">
+          <view>
+            <text class="font-small color-green">十二神</text>
+          </view>
+          <view>
+            <text>危日</text>
+          </view>
+        </view>
+        <view class="cell cell-4">
+          <view>
+            <text class="font-small color-green">今日胎神</text>
+          </view>
+          <view>
+            <text>厨灶门外东南</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

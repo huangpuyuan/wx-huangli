@@ -1,0 +1,5 @@
+.compass-detail { margin: 3rpx 1rpx; }
+.compass-detail::after { display: block; clear: both; content: ''; }
+.compass-item { float: left; margin: 4rpx; }
+.compass-item > view { font-size: 28rpx; font-weight: 600; float: left; width: 28rpx; height: 28rpx; margin-right: 5rpx; padding: 6rpx; color: seagreen; border: 2rpx solid seagreen; border-radius: 50%; }
+.compass-item > text { font-weight: 500; line-height: 28rpx; letter-spacing: 4rpx; }

@@ -1,0 +1,206 @@
+/* pages/huangli/huangli.wxss */
+
+@import 'template/template.wxss';
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10rpx;
+    background-color: #fffef3;
+}
+
+.calendar-main {
+    margin-bottom: 10rpx;
+    margin-left: 10rpx;
+}
+
+.calendar-title {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.arrow {
+    float: none;
+    width: 16px;
+    height: 9px;
+    padding-left: 10rpx;
+    vertical-align: middle;
+}
+
+.calendar-dayView {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.calendar-day {
+    font-family: impact;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 135px;
+    padding: 0;
+    color: seagreen;
+}
+
+.calendar-nongli {
+    font-size: 18px;
+    font-weight: 500;
+    color: seagreen;
+}
+
+.calendar-week {
+    font-size: 18px;
+    font-weight: 500;
+    color: seagreen;
+}
+
+.font-medium {
+    font-size: 15px;
+}
+
+.calendar-detail {
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 2px solid seagreen;
+    border-radius: 10rpx 10rpx;
+}
+
+.color-green {
+    font-weight: bold;
+    color: seagreen;
+}
+
+.calendar-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid seagreen;
+    border-bottom: none;    
+}
+
+.row {
+    display: table-row;
+    vertical-align: middle;
+}
+
+.cell {
+    display: table-cell;
+    width: 33%;
+    height: 300rpx;
+    vertical-align: middle;
+    border-right: 1px solid seagreen;
+}
+
+.cell text {
+    line-height: 40rpx;
+}
+
+.cell-img {
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.cell-left1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80rpx;
+    vertical-align: middle;
+    border-bottom: 1px solid seagreen;
+    align-items: center;
+}
+
+.cell-left2 {
+    display: flex;
+    flex-direction: column;
+    height: 240rpx;
+    align-items: center;
+}
+
+.cell-middle1 {
+    display: flex;
+    flex-direction: column;
+    height: 210rpx;
+    align-items: center;
+}
+
+.cell-middle2 {
+    height: 100rpx;
+}
+
+.circle-bgc {
+    height: 20px;
+    margin: 8rpx;
+    padding: 8rpx;
+    border-radius: 50%;
+    background-color: seagreen;
+}
+
+.circle-1 {
+    display: block;
+    padding: 2rpx;
+    border: 1px solid seagreen;
+    border-radius: 50%;
+}
+
+.font-circle {
+    font-size: 18px;
+    color: #fff;
+}
+
+.yi {
+    margin: 8rpx 16rpx;
+}
+
+.yi > text {
+    float: left;
+    margin: 0 8rpx;
+}
+
+.cell-1 {
+    width: 20%;
+    height: 185rpx;
+    text-align: center;
+}
+
+.cell-2 {
+    width: 60%;
+    height: 185rpx;
+    text-align: center;
+}
+
+.cell-3 {
+    width: 40%;
+    height: 150rpx;
+    text-align: center;
+}
+
+.cell-4 {
+    width: 20%;
+    height: 150rpx;
+    text-align: center;
+}
+
+.table {
+    display: table;
+    width: 100%;
+}
+
+.tr {
+    display: table-row;
+}
+
+.td {
+    display: table-cell;
+}
+
+.table-3 .cell > view:first-child {
+    height: 50rpx;
+}
+
+.table-3 .cell > view:last-child {
+    height: 100rpx;
+}
+.table-3{
+    border-bottom: 1px solid seagreen;
+}

@@ -1,0 +1,14 @@
+
+<!--pages/demo/demo.wxml-->
+<text bindtap="onTap">跳转静态模板页</text>
+<view class="calendar-title">
+  <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+    <text class="font-medium">{{date.year+date.month}}</text>
+    <image class="arrow" src="/image/arrow-bottom.png"></image>
+  </picker>
+</view>
+<view class="calendar-dayView">
+  <text class="calendar-day {{date.color}}">{{date.day}}</text>
+  <!--<text class="calendar-nongli">农历腊月廿五</text>-->
+  <text class="calendar-week {{date.color}}">{{date.week}}</text>
+</view>

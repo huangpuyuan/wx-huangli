@@ -1,0 +1,46 @@
+/* pages/demo/demo.wxss */
+.calendar-title {
+    text-align: center;
+}
+.arrow {
+    width: 16px;
+    height: 9px;
+    padding-left: 10rpx;
+    vertical-align: middle;
+}
+.calendar-dayView {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.calendar-day {
+    font-family: impact;
+    font-size: 150px;
+    font-weight: bold;
+    height: 135px;
+    line-height: 135px;
+    padding: 0;
+    margin: 0;
+    color: seagreen;
+    overflow: hidden;
+}
+
+.calendar-nongli {
+    font-size: 18px;
+    font-weight: 500;
+    color: seagreen;
+}
+
+.calendar-week {
+    font-size: 18px;
+    font-weight: 500;
+    color: seagreen;
+}
+
+.color-red {
+    color: #d82424;
+}
+.color-green {
+    color: seagreen;
+}

@@ -1,0 +1,20 @@
+<template name="compassDetail-tpl">
+    <view class="compass-detail">
+        <view class="compass-item">
+            <view>喜</view>
+            <text>西南</text>
+        </view>
+        <view class="compass-item">
+            <view>财</view>
+            <text>正东</text>
+        </view>
+        <view class="compass-item">
+            <view>贵</view>
+            <text>东北</text>
+        </view>
+        <view class="compass-item">
+            <view>生</view>
+            <text>正南</text>
+        </view>
+    </view>
+</template>
